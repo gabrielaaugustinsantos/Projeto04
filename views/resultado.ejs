@@ -1,0 +1,61 @@
+<html>
+		<head>
+			<title>Avaliação - Primeiro Trimestre</title>
+			<meta charset="UTF-8">
+			<link href="estilo.css" rel="stylesheet" type="text/css">
+		</head>
+  <body>
+
+	<div id="quadro">
+				<div id="cabecalho">
+					<img src="ifrs.png" align="left" width="130" style="padding-top: 5px; padding-left: 10px;">
+					<h1 align="center">Boletim Online</h1>
+					<p align="center"><%= periodoletivo%></p>
+				
+				</div>
+		<div id="corpo">
+				<p style="color: #000000; font-weight: bold;">Dados do Aluno</p>
+				<ul>
+					<li>Matrícula: <%= matricula%></li>
+					<li>Nome: <%= nome%></li>
+					<li>Curso: <%= curso%></li>
+				</ul>
+			
+			<table border="1" align="center" cellpadding="5" cellspacing="0" style="border-color: #000000">
+				<caption style="color: #000000; font-weight: bold;">Dados da Disciplina</caption>
+				<tr align="center">
+					<th rowspan="2">Nome da Disciplina</th>
+					<th rowspan="2">Tipo de Período Letivo</th>
+					<th colspan="4">Notas</th>
+                </tr>
+                <tr>  
+					
+					<th>Nota 01</th>
+                    <th>Nota 02</th>
+                    <th>Nota 03</th>
+                    <th>Nota 04</th>
+				</tr>
+				<tr>
+					<td><%= disciplina%></td>
+					<td><%= tipo%></td>
+					<td><%= nota01%></td>
+					<td><%= nota02%></td>
+				    <td><%= nota03%></td>
+				    <td><%= nota04%></td>
+				</tr>
+			</table>
+			<br>
+		</div>
+		
+		<div id="rodape">
+			<table border="1" align="center" cellpadding="15" width ="200"> 
+				
+				<th><p style="color: red;">Média Final: <%= media%></p></th>
+				<th><p style="color: red;">Conceito Final: <%= conceito%></p></th>
+				
+			</table>
+		</div>
+		</div>
+			<a href="/">Voltar para a página anterior</a>
+  </body>
+</html>

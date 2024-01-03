@@ -1,0 +1,18 @@
+div {
+    border: 1px;
+    border-style: solid;
+    width: 1100px;
+    text-align: left;
+}
+
+table, th, td {
+    border: 1px;
+    border-style: solid;
+    border-collapse: collapse;
+    text-align: center;
+    width: 900px;
+ }
+
+ li{
+    font-size: large;
+}
